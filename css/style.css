@@ -97,6 +97,22 @@ header .container {
   width: 24px;
 }
 /* //header end */
+/* popup */
+.popup {
+  position: absolute;
+  left: 50%;
+  top: 150%;
+  transform: translate(-50%, -50%);
+}
+.popup .textbox {
+  width: 500px;
+  height: 100px;
+  background-color: #3333337b;
+  text-align: center;
+  line-height: 30px;
+  padding-top: 5px;
+  border-radius: 10px;
+}
 
 /* //main start */
 main {
@@ -185,14 +201,14 @@ main {
 /* //main_product start */
 .main_prd {
   width: 100%;
-  height: 82vh;
+  height: 100vh;
   margin: auto;
   padding: 0 0.68% 115px;
 }
 
 .main_prd_warp {
   width: 100%;
-  height: 84%;
+  height: 100%;
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -212,7 +228,6 @@ main {
 .main_prd_warp .inner {
   width: 100%;
   max-width: 1660px;
-  height: 800px;
   margin: auto;
 }
 
