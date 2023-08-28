@@ -107,11 +107,13 @@ header .container {
 .popup .textbox {
   width: 500px;
   height: 100px;
-  background-color: #3333337b;
+  background-color: #ffffff;
   text-align: center;
   line-height: 30px;
   padding-top: 5px;
   border-radius: 10px;
+  color: red;
+  font-weight: bold;
 }
 
 .popup .btn_close {
