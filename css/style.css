@@ -35,24 +35,48 @@ header .container {
   border-bottom: 1px solid #e5e5e5;
 }
 
-.main_gnb ul {
+.main_gnb > ul {
   display: flex;
   margin-top: 4px;
   margin-bottom: 4px;
 }
 
-.main_gnb ul li {
+.main_gnb > ul li {
   margin-right: 28px;
 }
 
-.main_gnb ul li a {
+.main_gnb > ul li a {
   line-height: 18px;
   color: #000;
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 0.42px;
 }
+/* djflksdjfklsdjfksdjfljsdfljsdfjsdfjsdfjsdfkjdfljsdfkljs */
 
+.main_gnb .w100 {
+  width: 100%;
+  height: 0;
+  /* overflow: hidden; */
+  position: absolute;
+  left: 0;
+  top: 91px;
+}
+.main_gnb > li:nth-child(2) .w100 {
+  height: 180px;
+  overflow: visible;
+}
+
+.main_gnb .depth2 {
+  background-color: #fff;
+}
+
+.main_gnb .depth2 a {
+  display: block;
+  opacity: 0;
+  padding: 20px;
+}
+/* fjsdlkfjsdlfjdlskfjksldjfklsdjfsdlkjflskdjflksdjfklsjfksj */
 .logo {
   position: absolute;
   left: 50%;
@@ -291,7 +315,6 @@ main {
   height: 100%;
   top: 0;
   left: 0;
-  background-position: cover;
 }
 /* //media end */
 
