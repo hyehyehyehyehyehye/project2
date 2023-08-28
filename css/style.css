@@ -114,6 +114,8 @@ header .container {
   border-radius: 10px;
 }
 
+.popup .textbox input:checked
+
 /* //main start */
 main {
   width: 100%;
