@@ -252,7 +252,7 @@ main {
   padding-bottom: 140px;
 }
 .media {
-  padding-bottom: 54.4%;
+  height: calc(56.25vw);
   position: relative;
   top: 0;
   left: 0;
