@@ -14,3 +14,9 @@ setInterval(() => {
 }, 2500);
 
 slides.eq(n).addClass("on");
+
+$(".btn_close").on("click", function (e) {
+  e.preventDefault();
+  $(".popup").hide();
+  $(".overlay").removeClass("open");
+});
