@@ -197,13 +197,13 @@ main {
   height: 90vh;
   margin-bottom: 115px;
 }
-.main_bnr .bnrWrap {
+.main_bnr .bnr_Wrap {
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
 
-.bnrWrap .container {
+.bnr_Wrap .container {
   position: relative;
   left: 0;
   width: 100%;
@@ -212,7 +212,7 @@ main {
   box-sizing: content-box;
 }
 
-.bnrWrap .container li {
+.bnr_Wrap .container li {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -221,20 +221,20 @@ main {
   background: #ffffff no-repeat center center/cover;
 }
 
-.main_bnr .bnrWrap .container li.on {
+.main_bnr .bnr_Wrap .container li.on {
   opacity: 1;
 }
 
-.bnrWrap .container .img1 {
+.bnr_Wrap .container .img1 {
   background-image: url(../img/main_bnr01.png);
 }
-.bnrWrap .container .img2 {
+.bnr_Wrap .container .img2 {
   background-image: url(../img/main_bnr02.png);
 }
-.bnrWrap .container .img3 {
+.bnr_Wrap .container .img3 {
   background-image: url(../img/main_bnr03.png);
 }
-.bnrWrap .container .img4 {
+.bnr_Wrap .container .img4 {
   background-image: url(../img/main_bnr04.png);
 }
 
