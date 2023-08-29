@@ -1,4 +1,4 @@
-const slides = $(".bnrWarp .container li");
+const slides = $(".bnr_Wrap .container li");
 let n = 0;
 function slide() {
   slides.removeClass("on");
