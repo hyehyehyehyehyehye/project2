@@ -188,8 +188,8 @@ header .container {
 main {
   width: 100%;
   height: 100%;
-  position: relative;
   top: 120px;
+  position: relative;
 }
 /* //main banner start */
 .main_bnr {
@@ -314,6 +314,13 @@ main {
   width: 100%;
   position: absolute;
 }
+.main_prd_wrap .inner .item_wrap img:nth-child(2) {
+  z-index: -1;
+}
+.main_prd_wrap .inner .item_wrap:hover img:nth-child(2) {
+  z-index: 10;
+}
+
 .item_textbox p,
 .item_textbox p del,
 .item_textbox span {
@@ -439,16 +446,15 @@ main {
 
 /* review */
 .main_review {
-  width: 100%;
-  height: 56vh;
-  margin-bottom: 310px;
+  padding-bottom: 10%;
+  width: 75%;
+  display: block;
+  margin: auto;
 }
 
 .review_wrap {
   width: 100%;
   height: 100%;
-  margin-left: auto;
-  margin-right: auto;
   position: relative;
   overflow: hidden;
   list-style: none;
@@ -462,20 +468,66 @@ main {
   line-height: 1.25;
 }
 .review_wrap .inner {
-  width: 75%;
+  padding-bottom: 50px;
+  max-width: 990px;
+  overflow: hidden;
   margin: auto;
-  background-color: antiquewhite;
 }
 .review_wrap .inner ul {
   display: flex;
 }
-.review_wrap .inner ul .review {
-  width: 24%;
+.review_wrap .inner .reviews {
   margin-right: 10px;
 }
-.review_wrap .inner ul .review img {
-  width: 100%;
-  height: 200px;
+
+.review_wrap .inner .reviw_img {
+  position: relative;
+}
+.review_wrap .inner .reviw_img img {
+  width: 240px;
+  height: 240px;
+  object-fit: cover;
+}
+
+.reviw_textbox_top {
+  margin-top: -9px;
+  width: 240px;
+  font-size: 12px;
+  border: 1px solid #e5e5e5;
+  padding: 5px 10px 5px 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.reviw_textbox_top p:nth-child(3) {
+  color: #e5e5e5;
+}
+.reviw_textbox_bottom {
+  display: flex;
+  width: 240px;
+  font-size: 12px;
+  border: 1px solid #e5e5e5;
+  padding: 10px 10px 10px 10px;
+}
+.reviw_textbox_bottom {
+  border-top: none;
+}
+.reviw_textbox_bottom img {
+  display: block;
+  height: 50px;
+  width: 55px;
+  object-fit: cover;
+}
+.reviw_textbox_bottom p {
+  width: 120px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.reviw_textbox_bottom .text_right {
+  line-height: 20px;
+  margin-top: 5px;
+  margin-left: 10px;
 }
 
 /* //main end */
