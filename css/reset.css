@@ -140,12 +140,8 @@ body {
 
 a {
   text-decoration: none;
-  color: var(--text_1);
 }
 
-a:hover {
-  text-decoration: underline;
-}
 h1,
 .h1 {
   font-size: 6rem;
