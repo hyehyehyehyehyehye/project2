@@ -115,15 +115,7 @@ table {
 * {
   box-sizing: border-box;
 }
-:root {
-  --chr1: #007aff;
-  --chr2: #ffc600;
-  --chr3: #000;
-  --acr1: #000;
-  --acr2: #9a9a9a;
-  --acr3: #e5e5e5;
-  --acr4: #f5f5f5;
-}
+
 html {
   overflow-y: scroll; /* hidden 시험이라 하는 것 */
   overflow-x: hidden;
