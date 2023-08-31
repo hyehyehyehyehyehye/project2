@@ -121,7 +121,6 @@ header .container {
 .top_menu ul {
   display: flex;
   margin-right: 28px;
-  margin-top: 4px;
   margin-bottom: 4px;
 }
 .top_menu ul li {
