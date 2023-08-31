@@ -166,8 +166,8 @@ header .container {
   bottom: 0.8rem;
   left: 50%;
   transform: translateX(-50%);
-  width: 40px;
-  height: 20px;
+  width: 44px;
+  height: 24px;
 }
 
 .overlay {
