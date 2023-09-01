@@ -602,3 +602,31 @@ footer {
   color: #fff;
   flex-basis: 15%;
 }
+
+.fix_top_btn {
+  position: fixed;
+  bottom: 60px;
+  right: 60px;
+  width: 60px;
+  height: 60px;
+  background: #fff;
+  box-shadow: 0px 3px 10px #7575758d;
+  border-radius: 50%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  z-index: 99;
+}
+
+.fix_top_btn a {
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
+.fix_top_btn a::before {
+  content: "〉";
+  display: block;
+  transform: rotate(-90deg);
+  font-size: 20px;
+  font-weight: bold;
+}
