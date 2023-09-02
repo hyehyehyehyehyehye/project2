@@ -298,7 +298,7 @@ main {
   display: flex;
   z-index: 11;
   left: 50%;
-  transform: translateX(-5%);
+  transform: translateX(-20px);
 }
 .page_num_wrap .num {
   display: block;
