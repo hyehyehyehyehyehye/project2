@@ -6,7 +6,6 @@ a {
 ul {
   list-style: none;
 }
-
 header {
   position: fixed;
   z-index: 100;
@@ -173,10 +172,6 @@ header .container {
   position: relative;
   left: 0;
   top: -30px;
-}
-
-.M_main_gnb {
-  display: none;
 }
 
 /* //header end */
@@ -487,6 +482,7 @@ main {
   height: 50vw;
   min-height: 500px;
   overflow: hidden;
+  flex-wrap: wrap;
 }
 .left_img {
   width: 50%;
@@ -787,4 +783,242 @@ footer {
   transform: rotate(-90deg);
   font-size: 20px;
   font-weight: bold;
+}
+.M_main_gnb {
+  display: none;
+  background-color: #fff;
+}
+
+.m_menu {
+  display: none;
+}
+.main_prd_btn {
+  display: none;
+}
+
+.fold_btn {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 56.25%;
+  }
+  .container .main_gnb {
+    display: none;
+  }
+  .container .gnb {
+    position: relative;
+    display: block;
+    height: 59px;
+  }
+  .M_main_gnb {
+    display: block;
+  }
+  .M_main_gnb ul {
+    display: flex;
+    padding: 10px 17px;
+    background-color: #fff;
+  }
+  .M_main_gnb ul li {
+    padding-right: 7%;
+    font-size: 14px;
+  }
+
+  .logo {
+    position: absolute;
+    left: 19px;
+    top: 34px;
+    transform: translateY(-50%);
+  }
+
+  .logo h2 a img {
+    width: 100px;
+  }
+
+  .gnb2 .top_menu {
+    display: none;
+  }
+
+  .top_icon ul {
+    position: absolute;
+    right: 28px;
+    top: -15px;
+  }
+  .top_icon ul li:nth-child(2) {
+    margin-left: 13px;
+  }
+  .top_icon ul li a img {
+    height: 20px;
+  }
+
+  .container .img .textbox {
+    top: 8%;
+    transform: unset;
+    left: 6.5%;
+  }
+
+  .h1 {
+    line-height: 1.35;
+    font-size: 32px;
+    font-weight: 600;
+  }
+  .h5 {
+    font-size: 14px;
+    padding-top: 16px;
+    line-height: 23px;
+  }
+  .h5 a {
+    color: #000;
+    text-decoration: underline;
+  }
+
+  .bnr_Wrap .container li {
+    height: 86%;
+  }
+  .m_menu {
+    display: block;
+    position: relative;
+  }
+
+  .main_bnr_btn .left_btn {
+    left: 15px;
+    top: -330px;
+    z-index: 10;
+  }
+
+  .main_bnr_btn .right_btn {
+    right: 15px;
+    top: -330px;
+    z-index: 10;
+  }
+  .m_menu img {
+    position: absolute;
+    right: -13px;
+    top: -12px;
+  }
+  .main_prd {
+    padding: 0 1% 45px;
+  }
+  .main_prd_wrap .inner .item {
+    flex: 1 0 320px;
+    margin-right: 30px;
+  }
+  .item_textbox p,
+  .item_textbox span,
+  .item_textbox del {
+    font-size: 12px;
+  }
+  .item_textbox p {
+    padding-bottom: 8.5px;
+  }
+  .main_prd_bar {
+    margin-bottom: 45px;
+  }
+  .main_prd_btn {
+    display: block;
+    width: calc(100% - 36px);
+    height: 51px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    margin: auto;
+    text-align: center;
+    line-height: 51px;
+    font-weight: 600;
+  }
+  .main_prd_btn:hover {
+    background-color: #007aff;
+    color: #fff;
+  }
+
+  .contents {
+    height: 100%;
+  }
+  .left_img {
+    width: 100%;
+    height: 100vw;
+  }
+
+  .left_img .textbox h1 {
+    position: relative;
+    top: 10px;
+    font-weight: 700;
+    font-size: 28px;
+    letter-spacing: -0.96px;
+    line-height: 1.4;
+  }
+  .left_img .textbox h5 {
+    padding-top: 20px;
+    line-height: 1.6;
+  }
+  .right_img {
+    width: 100%;
+    height: 100vw;
+  }
+
+  .right_img .textbox h1 {
+    position: relative;
+    top: 10px;
+    font-weight: 700;
+    font-size: 28px;
+    letter-spacing: -0.96px;
+    line-height: 1.4;
+  }
+  .right_img .textbox h5 {
+    padding-top: 20px;
+    line-height: 1.6;
+  }
+  .content2 {
+    height: 130vw;
+  }
+  .content2 h1 {
+    font-size: 28px;
+  }
+
+  .content2 .more_but {
+    width: calc(100% - 36px);
+    bottom: 3.5%;
+  }
+  .main_review {
+    width: 100%;
+  }
+
+  .footer_top ul .caption {
+    font-size: 14px;
+  }
+
+  .footer_bottom {
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+
+  .footer_bottom .bank_footer {
+    display: none;
+  }
+  .footer_bottom .right {
+    padding: 25px 19px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #fff;
+  }
+  .footer_bottom .R {
+    padding-bottom: 3px;
+  }
+  .footer_bottom .right li:nth-child(1) {
+    font-size: 14px;
+  }
+  .footer_bottom .R .link li:nth-child(2) {
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s;
+  }
+  .footer_bottom .R .link:hover li:nth-child(2) {
+    height: auto;
+    overflow: visible;
+  }
+  .fold_btn {
+    display: block;
+    width: 20px;
+    position: absolute;
+    left: 0;
+  }
 }
