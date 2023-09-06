@@ -63,3 +63,32 @@ function underSlide() {
     }
   );
 }
+
+let footerList = $(".Right");
+let footerBar = $(".link");
+let footerLinks = $("li");
+footerList.click(function () {
+  footerLinks.toggleClass("active");
+});
+
+let footerLists = $(".right");
+let footerBars = $(".num");
+let footerLink = $(".none");
+footerLists.click(function () {
+  footerLink.toggleClass("active");
+});
+
+let hamMenuIcon = $("#ham_menu");
+let navBar = $(".aside_wrap");
+let navLinks = $("li");
+hamMenuIcon.click(function () {
+  navBar.toggleClass("active");
+  hamMenuIcon.toggleClass("fa-times");
+});
+
+let category = $(".category_menu ul .line2");
+let categoryMenu = $(".category_menu .dep2");
+let menuLinks = $(".dep2");
+category.click(function () {
+  categoryMenu.toggleClass("active");
+});
