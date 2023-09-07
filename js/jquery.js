@@ -1,41 +1,42 @@
-const slides = $(".bnr_Wrap .container li");
-let n = 0;
-function slide() {
-  slides.removeClass("on");
-  slides.eq(n).addClass("on");
-  n++;
-  // 변수+1
-  if (n >= slides.length) {
-    n = 0;
-  }
-}
-setInterval(() => {
-  slide();
-}, 2500);
+// // main banner
+// const slides = $(".bnr_Wrap .container li");
+// let n = 0;
+// function slide() {
+//   slides.removeClass("on");
+//   slides.eq(n).addClass("on");
+//   n++;
+//   // 변수+1
+//   if (n >= slides.length) {
+//     n = 0;
+//   }
+// }
+// setInterval(() => {
+//   slide();
+// }, 2500);
 
-slides.eq(n).addClass("on");
+// slides.eq(n).addClass("on");
 
+$(".bnr_Wrap .container").bxSlider({
+  mode: "horizontal",
+  minSlides: 1,
+  maxSlides: 1,
+  speed: 2000,
+  auto: true,
+  pause: 3000,
+  nextSelector: ".main_bnr_btn .right_btn",
+  prevSelector: ".main_bnr_btn .left_btn",
+  pager: true,
+  pagerCustom: "page_num_wrap",
+});
+
+// 포트폴리오 닫기 버튼
 $(".btn_close").on("click", function (e) {
   e.preventDefault();
   $(".popup").hide();
   $(".overlay").removeClass("open");
 });
 
-//
-// setInterval(topSlide, 3000);
-// function topSlide() {
-//   $(".dep2_banenr_wrap ").animate(
-//     { "margin-left": "-320px" },
-//     1200,
-//     function () {
-//       $(".dep2_banenr_wrap ").css({ "margin-left": "0" });
-//       $(".dep2_banenr_wrap>img:first-child").insertAfter(
-//         ".dep2_banenr_wrap>img:last-child"
-//       );
-//     }
-//   );
-// }
-
+// main_prd_wrap
 setInterval(fnSlide, 4000);
 function fnSlide() {
   $(".main_prd_wrap .inner ul").animate(
@@ -49,7 +50,7 @@ function fnSlide() {
     }
   );
 }
-
+// review_wrap
 setInterval(underSlide, 3000);
 function underSlide() {
   $(".review_wrap .inner ul").animate(
@@ -64,6 +65,7 @@ function underSlide() {
   );
 }
 
+// m_footer
 let footerList = $(".Right");
 let footerBar = $(".link");
 let footerLinks = $("li");
@@ -78,6 +80,7 @@ footerLists.click(function () {
   footerLink.toggleClass("active");
 });
 
+// m-aside
 let hamMenuIcon = $("#ham_menu");
 let navBar = $(".aside_wrap");
 let navLinks = $("li");
@@ -88,7 +91,22 @@ hamMenuIcon.click(function () {
 
 let category = $(".category_menu ul .line2");
 let categoryMenu = $(".category_menu .dep2");
-let menuLinks = $(".dep2");
+let menuLinks = $("li");
 category.click(function () {
   categoryMenu.toggleClass("active");
+});
+
+$(".aside_slide").bxSlider({
+  mode: "horizontal",
+  speed: 1000,
+  auto: true,
+  autoHover: true,
+  pause: 2000,
+});
+
+$(".dep2_banenr_wrap").bxSlider({
+  mode: "horizontal",
+  speed: 1000,
+  auto: true,
+  pause: 2000,
 });
