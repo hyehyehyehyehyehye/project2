@@ -16,15 +16,6 @@ setInterval(() => {
 
 slides.eq(n).addClass("on");
 
-// $(".bnr_Wrap .container").bxSlider({
-//   mode: "horizontal",
-//   auto: true,
-//   pause: 3000,
-//   speed: 1000,
-//   pager: true,
-//   controls: true,
-// });
-
 // 포트폴리오 닫기 버튼
 $(".btn_close").on("click", function (e) {
   e.preventDefault();
@@ -46,20 +37,45 @@ function fnSlide() {
     }
   );
 }
+
 // review_wrap
-setInterval(underSlide, 3000);
-function underSlide() {
-  $(".review_wrap .inner ul").animate(
-    { "margin-left": "-250px" },
-    1200,
-    function () {
-      $(".review_wrap .inner ul").css({ "margin-left": "0" });
-      $(".review_wrap .inner ul li:first-child").insertAfter(
-        ".review_wrap .inner ul li:last-child"
-      );
-    }
-  );
-}
+// setInterval(underSlide, 3000);
+// function underSlide() {
+//   $(".review_wrap .inner ul").animate(
+//     { "margin-left": "-250px" },
+//     1200,
+//     function () {
+//       $(".review_wrap .inner ul").css({ "margin-left": "0" });
+//       $(".review_wrap .inner ul li:first-child").insertAfter(
+//         ".review_wrap .inner ul li:last-child"
+//       );
+//     }
+//   );
+// }
+
+$(".review_wrap .inner ul").bxSlider({
+  mode: "horizontal",
+  speed: 1000,
+  auto: true,
+  pause: 2000,
+  minSlides: 1,
+  maxSlides: 4,
+  moveSlides: 5,
+  slideWidth: 240,
+  nextSelector: ".img_ctl .next",
+  prevSelector: ".img_ctl .prev",
+});
+
+$(".review_wrap .inner ul").click(function () {
+  slider.goToNextSlide();
+  return false;
+});
+
+$(".review_wrap .inner ul").click(function () {
+  var count = slider.getSlideCount();
+  alert("Slide count: " + count);
+  return false;
+});
 
 // m_footer
 let footerList = $(".Right");
@@ -118,3 +134,5 @@ $(".custom-pager-link").click(function (e) {
   var index = $(this).index();
   slider.goToSlide(index);
 });
+
+//  autoControls: true,
