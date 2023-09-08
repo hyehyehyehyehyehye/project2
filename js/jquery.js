@@ -1,33 +1,29 @@
 // // main banner
-// const slides = $(".bnr_Wrap .container li");
-// let n = 0;
-// function slide() {
-//   slides.removeClass("on");
-//   slides.eq(n).addClass("on");
-//   n++;
-//   // 변수+1
-//   if (n >= slides.length) {
-//     n = 0;
-//   }
-// }
-// setInterval(() => {
-//   slide();
-// }, 2500);
+const slides = $(".bnr_Wrap .container li");
+let n = 0;
+function slide() {
+  slides.removeClass("on");
+  slides.eq(n).addClass("on");
+  n++;
+  // 변수+1
+  if (n >= slides.length) {
+    n = 0;
+  }
+}
+setInterval(() => {
+  slide();
+}, 2500);
 
-// slides.eq(n).addClass("on");
+slides.eq(n).addClass("on");
 
-$(".bnr_Wrap .container").bxSlider({
-  mode: "horizontal",
-  minSlides: 1,
-  maxSlides: 1,
-  speed: 2000,
-  auto: true,
-  pause: 3000,
-  nextSelector: ".main_bnr_btn .right_btn",
-  prevSelector: ".main_bnr_btn .left_btn",
-  pager: true,
-  pagerCustom: "page_num_wrap",
-});
+// $(".bnr_Wrap .container").bxSlider({
+//   mode: "horizontal",
+//   auto: true,
+//   pause: 3000,
+//   speed: 1000,
+//   pager: true,
+//   controls: true,
+// });
 
 // 포트폴리오 닫기 버튼
 $(".btn_close").on("click", function (e) {
@@ -102,6 +98,8 @@ $(".aside_slide").bxSlider({
   auto: true,
   autoHover: true,
   pause: 2000,
+  controls: false,
+  pager: false,
 });
 
 $(".dep2_banenr_wrap").bxSlider({
@@ -109,4 +107,14 @@ $(".dep2_banenr_wrap").bxSlider({
   speed: 1000,
   auto: true,
   pause: 2000,
+  controls: false,
+  pager: true, // 페이지 표시기 사용
+  pagerType: "short",
+  pagerCustom: ".custom-pager",
+});
+
+$(".custom-pager-link").click(function (e) {
+  e.preventDefault();
+  var index = $(this).index();
+  slider.goToSlide(index);
 });
