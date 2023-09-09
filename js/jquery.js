@@ -17,10 +17,12 @@
 // slides.eq(n).addClass("on");
 $(".bnr_Wrap .container").bxSlider({
   mode: "horizontal",
-  controls: true,
   auto: true,
   speed: 1000,
-  pause: 2000,
+  pause: 4000,
+  controls: true,
+  pager: true, // 페이지 표시기 사용
+  pagerType: "short",
   pagerCustom: "#bx-pager",
 });
 // 포트폴리오 닫기 버튼
@@ -65,9 +67,9 @@ $(".review_wrap .inner ul").bxSlider({
   speed: 1000,
   auto: true,
   pause: 2000,
-  minSlides: 1,
+  minSlides: 4,
   maxSlides: 4,
-  moveSlides: 5,
+  moveSlides: 4,
   slideWidth: 240,
   nextSelector: ".img_ctl .next",
   prevSelector: ".img_ctl .prev",
@@ -141,7 +143,6 @@ $(".dep2_banenr_wrap").bxSlider({
   controls: false,
   pager: true, // 페이지 표시기 사용
   pagerType: "short",
-  pagerCustom: ".custom-pager",
 });
 
 $(".custom-pager-link").click(function (e) {
