@@ -15,7 +15,8 @@
 // }, 2500);
 
 // slides.eq(n).addClass("on");
-$(".bnr_Wrap .container").bxSlider({
+
+var mainSl = $(".bnr_Wrap .container").bxSlider({
   mode: "horizontal",
   auto: true,
   speed: 1000,
@@ -24,7 +25,15 @@ $(".bnr_Wrap .container").bxSlider({
   pager: true, // 페이지 표시기 사용
   pagerType: "short",
   pagerCustom: "#bx-pager",
+  startSlide: 0,
+
+  onSlideAfter: function ($slideElement, oldIndex, newIndex) {
+    mainSl.startAuto(); // 슬라이드 이동 후 자동 재생을 시작합니다.
+  },
+  nextSelector: ".main_img_ctl .main_next",
+  prevSelector: ".main_img_ctl .main_prev",
 });
+
 // 포트폴리오 닫기 버튼
 $(".btn_close").on("click", function (e) {
   e.preventDefault();
@@ -74,14 +83,19 @@ $(".review_wrap .inner ul").bxSlider({
   nextSelector: ".img_ctl .next",
   prevSelector: ".img_ctl .prev",
   controls: true,
+  startSlide: 0,
+
+  onSlideAfter: function ($slideElement, oldIndex, newIndex) {
+    mainSl.startAuto(); // 슬라이드 이동 후 자동 재생을 시작합니다.
+  },
 });
 
-$(".review_wrap .inner ul").click(function () {
+$(".img_ctl .next").click(function () {
   slider.goToNextSlide();
   return false;
 });
 
-$(".review_wrap .inner ul").click(function () {
+$(".img_ctl .prev").click(function () {
   var count = slider.getSlideCount();
   alert("Slide count: " + count);
   return false;

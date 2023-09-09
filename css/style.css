@@ -316,9 +316,24 @@ main {
   color: #000;
   text-decoration: underline;
 }
-.swiper-pagination-fraction {
-  color: #fff;
+.main_img_ctl {
+  display: flex;
+  justify-content: space-between;
 }
+.main_img_ctl .main_prev {
+  position: absolute;
+  left: 0;
+  top: 310px;
+}
+.main_img_ctl .main_prev .bx-prev {
+  background: url(../img/main_navi.png) left;
+}
+.main_img_ctl .main_next {
+  position: absolute;
+  right: 0;
+  top: 310px;
+}
+
 /* //main banner end */
 
 /* // */
