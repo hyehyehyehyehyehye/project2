@@ -27,9 +27,9 @@ var mainSl = $(".bnr_Wrap .container").bxSlider({
   pagerCustom: "#bx-pager",
   startSlide: 0,
 
-  onSlideAfter: function ($slideElement, oldIndex, newIndex) {
-    mainSl.startAuto(); // 슬라이드 이동 후 자동 재생을 시작합니다.
-  },
+  // onSlideAfter: function ($slideElement, oldIndex, newIndex) {
+  //   mainSl.startAuto(); // 슬라이드 이동 후 자동 재생을 시작합니다.
+  // },
   nextSelector: ".main_img_ctl .main_next",
   prevSelector: ".main_img_ctl .main_prev",
 });
@@ -42,19 +42,31 @@ $(".btn_close").on("click", function (e) {
 });
 
 // main_prd_wrap
-setInterval(fnSlide, 4000);
-function fnSlide() {
-  $(".main_prd_wrap .inner ul").animate(
-    { "margin-left": "-430px" },
-    1200,
-    function () {
-      $(".main_prd_wrap .inner ul").css({ "margin-left": "0" });
-      $(".main_prd_wrap .inner ul li:first-child").insertAfter(
-        ".main_prd_wrap .inner ul li:last-child"
-      );
-    }
-  );
-}
+// setInterval(fnSlide, 4000);
+// function fnSlide() {
+//   $(".main_prd_wrap .inner ul").animate(
+//     { "margin-left": "-430px" },
+//     1200,
+//     function () {
+//       $(".main_prd_wrap .inner ul").css({ "margin-left": "0" });
+//       $(".main_prd_wrap .inner ul li:first-child").insertAfter(
+//         ".main_prd_wrap .inner ul li:last-child"
+//       );
+//     }
+//   );
+// }
+
+$(".main_prd_wrap .inner ul").bxSlider({
+  pager: true,
+  speed: 1000,
+  auto: true,
+  pause: 2000,
+  minSlides: 1,
+  maxSlides: 2,
+  moveSlides: 3,
+  slideWidth: 800,
+  controls: false,
+});
 
 // review_wrap
 // setInterval(underSlide, 3000);
@@ -76,18 +88,15 @@ $(".review_wrap .inner ul").bxSlider({
   speed: 1000,
   auto: true,
   pause: 2000,
-  minSlides: 4,
+  minSlides: 2,
   maxSlides: 4,
   moveSlides: 4,
   slideWidth: 240,
   nextSelector: ".img_ctl .next",
   prevSelector: ".img_ctl .prev",
   controls: true,
-  startSlide: 0,
-
-  onSlideAfter: function ($slideElement, oldIndex, newIndex) {
-    mainSl.startAuto(); // 슬라이드 이동 후 자동 재생을 시작합니다.
-  },
+  slideMargin: 10,
+  adaptiveHeight: true,
 });
 
 $(".img_ctl .next").click(function () {
@@ -164,5 +173,3 @@ $(".custom-pager-link").click(function (e) {
   var index = $(this).index();
   slider.goToSlide(index);
 });
-
-//  autoControls: true,
