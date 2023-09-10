@@ -20,12 +20,11 @@ var mainSl = $(".bnr_Wrap .container").bxSlider({
   mode: "horizontal",
   auto: true,
   speed: 1000,
-  pause: 4000,
+  pause: 3000,
   controls: true,
   pager: true, // 페이지 표시기 사용
   pagerType: "short",
   pagerCustom: "#bx-pager",
-  startSlide: 0,
 
   // onSlideAfter: function ($slideElement, oldIndex, newIndex) {
   //   mainSl.startAuto(); // 슬라이드 이동 후 자동 재생을 시작합니다.
@@ -91,11 +90,11 @@ $(".review_wrap .inner ul").bxSlider({
   minSlides: 2,
   maxSlides: 4,
   moveSlides: 4,
-  slideWidth: 240,
+  slideWidth: 300,
   nextSelector: ".img_ctl .next",
   prevSelector: ".img_ctl .prev",
   controls: true,
-  slideMargin: 10,
+  slideMargin: 20,
   adaptiveHeight: true,
 });
 

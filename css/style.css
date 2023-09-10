@@ -592,11 +592,12 @@ main {
 }
 
 .review_wrap {
-  width: 100%;
+  width: 72%;
   height: 100%;
   position: relative;
   list-style: none;
   z-index: 1;
+  margin: auto;
 }
 
 .review_wrap h1 {
@@ -627,8 +628,8 @@ main {
   position: relative;
 }
 .review_wrap .inner .reviw_img img {
-  width: 240px;
-  height: 240px;
+  width: 300px;
+  height: 300px;
   object-fit: cover;
 }
 
@@ -689,7 +690,7 @@ main {
 }
 .reviw_textbox_top {
   margin-top: -9px;
-  width: 240px;
+  width: 300px;
   font-size: 12px;
   border: 1px solid #e5e5e5;
   background: #fff;
@@ -703,7 +704,7 @@ main {
 }
 .reviw_textbox_bottom {
   display: flex;
-  width: 240px;
+  width: 300px;
   font-size: 12px;
   border: 1px solid #e5e5e5;
   background: #fff;
