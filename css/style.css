@@ -308,12 +308,12 @@ main {
 
 .h1 {
   line-height: 1.35;
-  font-size: 60px;
+  font-size: 6rem;
   font-weight: 600;
 }
 .h5 {
   font-size: 25px;
-  padding-top: 40px;
+  padding-top: 4rem;
   line-height: 1.5;
 }
 .h5 a {
@@ -364,7 +364,7 @@ main {
 .main_prd {
   max-width: 1840px;
   margin: auto;
-  padding: 0 0 115px;
+  padding: 0 0.68% 115px;
   overflow: hidden;
 }
 
@@ -394,7 +394,7 @@ main {
   width: 100% !important;
 }
 .main_prd_wrap .inner .item {
-  flex: 1 0 600px;
+  flex: 1 0 560px;
   margin-right: 30px;
 }
 
@@ -486,17 +486,6 @@ main {
   top: 0;
   left: 0;
   width: 100%;
-}
-.media p {
-  position: relative;
-  text-align: center;
-  font-size: 50px;
-  z-index: 10;
-  top: 80%;
-  transform: translateY(calc(-50%));
-  text-transform: uppercase;
-  font-weight: 900;
-  color: #fff;
 }
 
 .media img {
@@ -871,6 +860,29 @@ footer {
 }
 .more_btn {
   display: none;
+}
+@media screen and (max-width: 1024px) {
+  .main_prd_wrap .inner .item {
+    flex: 1 0 480px;
+    margin-right: 30px;
+  }
+}
+@media screen and (max-width: 900px) {
+  h1,
+  .h1 {
+    font-size: 40px;
+  }
+  h5,
+  .h5 {
+    font-size: 18px;
+  }
+  .main_prd_wrap .inner .bx-viewport {
+    height: auto;
+  }
+  .main_prd_wrap .inner .item {
+    flex: 1 0 400px;
+    margin-right: 30px;
+  }
 }
 @media screen and (max-width: 768px) {
   html {
@@ -1296,5 +1308,15 @@ footer {
     width: 20px;
     position: absolute;
     left: 0;
+  }
+}
+@media screen and (max-width: 500px) {
+  h1,
+  .h1 {
+    font-size: 40px;
+  }
+  h5,
+  .h5 {
+    font-size: 14px;
   }
 }
