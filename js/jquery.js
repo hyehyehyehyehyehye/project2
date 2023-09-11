@@ -90,7 +90,7 @@ $(".review_wrap .inner ul").bxSlider({
   minSlides: 2,
   maxSlides: 4,
   moveSlides: 4,
-  slideWidth: 300,
+  slideWidth: 270,
   nextSelector: ".img_ctl .next",
   prevSelector: ".img_ctl .prev",
   controls: true,
