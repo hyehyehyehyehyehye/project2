@@ -385,7 +385,8 @@ main {
   line-height: 1.25;
 }
 .main_prd_wrap .inner {
-  max-width: 1660px;
+  max-width: 1560px;
+  margin: 0 auto;
 }
 
 .main_prd_wrap .inner ul {
