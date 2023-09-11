@@ -1231,6 +1231,7 @@ footer {
   }
   .content2 {
     height: 130vw;
+    background: url(../img/m_mid_bnr04.png) no-repeat center/cover;
   }
   .content2 h1 {
     font-size: 28px;
