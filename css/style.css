@@ -384,10 +384,10 @@ main {
   letter-spacing: 1.8px;
   line-height: 1.25;
 }
-
-.main_prd_wrap .inner .bx-viewport {
-  overflow: visible !important;
+.main_prd_wrap .inner {
+  max-width: 1660px;
 }
+
 .main_prd_wrap .inner ul {
   display: flex;
   height: 100%;
