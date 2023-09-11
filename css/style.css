@@ -1259,6 +1259,10 @@ footer {
     object-fit: cover;
   }
 
+  .reviw_textbox_top,
+  .reviw_textbox_bottom {
+    width: 200px;
+  }
   .footer_top ul .caption {
     font-size: 14px;
   }
