@@ -57,9 +57,9 @@ $(".btn_close").on("click", function (e) {
 
 $(".main_prd_wrap .inner ul").bxSlider({
   pager: true,
-  speed: 1000,
+  speed: 1500,
   auto: true,
-  pause: 2000,
+  pause: 3000,
   minSlides: 1,
   maxSlides: 2,
   moveSlides: 3,
@@ -84,9 +84,9 @@ $(".main_prd_wrap .inner ul").bxSlider({
 
 $(".review_wrap .inner ul").bxSlider({
   mode: "horizontal",
-  speed: 1000,
+  speed: 1500,
   auto: true,
-  pause: 2000,
+  pause: 3000,
   minSlides: 2,
   maxSlides: 4,
   moveSlides: 4,
