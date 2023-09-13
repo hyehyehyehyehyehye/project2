@@ -1304,4 +1304,10 @@ footer {
   .h5 {
     font-size: 14px;
   }
+
+  .fix_top_btn {
+    bottom: 30px;
+    right: 30px;
+    transition: 0.5s;
+  }
 }
