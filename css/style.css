@@ -281,7 +281,7 @@ main {
 .main_img_ctl .main_prev {
   position: absolute;
   left: 32px;
-  top: -50vh;
+  top: -48vh;
 }
 .main_img_ctl .main_prev .bx-prev {
   display: block;
@@ -293,7 +293,7 @@ main {
 .main_img_ctl .main_next {
   position: absolute;
   right: 32px;
-  top: -50vh;
+  top: -48vh;
 }
 .main_img_ctl .main_next .bx-next {
   display: block;
