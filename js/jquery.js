@@ -1,21 +1,6 @@
-// // // main banner
-// const slides = $(".bnr_Wrap .container li");
-// let n = 0;
-// function slide() {
-//   slides.removeClass("on");
-//   slides.eq(n).addClass("on");
-//   n++;
-//   // 변수+1
-//   if (n >= slides.length) {
-//     n = 0;
-//   }
-// }
-// setInterval(() => {
-//   slide();
-// }, 2500);
-
-// slides.eq(n).addClass("on");
-
+$("a").on("click", () => {
+  return false;
+});
 // 포트폴리오 닫기 버튼
 $(".btn_close").on("click", function (e) {
   e.preventDefault();
@@ -23,47 +8,18 @@ $(".btn_close").on("click", function (e) {
   $(".overlay").removeClass("open");
 });
 
-// main_prd_wrap
-// setInterval(fnSlide, 4000);
-// function fnSlide() {
-//   $(".main_prd_wrap .inner ul").animate(
-//     { "margin-left": "-430px" },
-//     1200,
-//     function () {
-//       $(".main_prd_wrap .inner ul").css({ "margin-left": "0" });
-//       $(".main_prd_wrap .inner ul li:first-child").insertAfter(
-//         ".main_prd_wrap .inner ul li:last-child"
-//       );
-//     }
-//   );
-// }
-
 $(".main_prd_wrap .inner ul").bxSlider({
   pager: true,
   speed: 1500,
   auto: true,
   pause: 3000,
   minSlides: 1,
-  maxSlides: 2,
-  moveSlides: 3,
+  maxSlides: 3,
+  moveSlides: 1,
   slideWidth: 800,
+  infiniteLoop: true,
   controls: false,
 });
-
-// review_wrap
-// setInterval(underSlide, 3000);
-// function underSlide() {
-//   $(".review_wrap .inner ul").animate(
-//     { "margin-left": "-250px" },
-//     1200,
-//     function () {
-//       $(".review_wrap .inner ul").css({ "margin-left": "0" });
-//       $(".review_wrap .inner ul li:first-child").insertAfter(
-//         ".review_wrap .inner ul li:last-child"
-//       );
-//     }
-//   );
-// }
 
 $(".review_wrap .inner ul").bxSlider({
   mode: "horizontal",
@@ -138,6 +94,8 @@ $(".aside_slide").bxSlider({
   pause: 2000,
   controls: false,
   pager: false,
+  infiniteLoop: true,
+  autoHover: true,
 });
 
 $(".dep2_banenr_wrap").bxSlider({
@@ -167,4 +125,6 @@ var mainSl = $(".bx_sli").bxSlider({
   pagerCustom: "#bx-pager",
   nextSelector: ".main_img_ctl .main_next",
   prevSelector: ".main_img_ctl .main_prev",
+  infiniteLoop: true,
+  autoHover: true,
 });
